@@ -35,6 +35,9 @@ KEY = get_random_bytes(16) : Generates a random 16-byte encryption key
 AES.MODE_CBC : A secure mode of AES that requires padding and an IV
 iv : Initialization vector . It is a type of an initial input that ensures that the same plaintext, when encrypted multiple times with the same key, produces different ciphertexts. 
 
+pip install pycryptodome - for importing cryptography algorithms
+
+
 Challenges faced in the tool: 
 1) Overwriting of the file – when encrypting files one after the other, they get overwritten with the same name i.e.-compressed_file.zlib or decompressed_file.txt
 Solution : added string formatting to overcome the problem
